@@ -1,0 +1,24 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+WEB_RESOURCES_DIR=$DIR/inst
+
+PACKAGE_NAME=$(cd $DIR; basename $(pwd))
+
+
+cd $WEB_RESOURCES_DIR
+
+yarn install || exit 100
+
+yarn build || exit 200
+
+cd $DIR
+
+cd ..
+
+R CMD build $PACKAGE_NAME
+
+BINARY=$(ls -td ./rcloud.ipywidgets*.tar.gz | head -1)
+
+R CMD INSTALL $BINARY

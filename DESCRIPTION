@@ -1,0 +1,13 @@
+Package: rcloud.ipywidgets
+Type: Package
+Title: Support for interactive dashboards implemented with 'ipywidgets'
+Version: 0.0.1
+Authors@R: person("Mateusz", "Rogalski", email = "useless5771@gmail.com",
+             role = c("aut", "cre"))
+Description: Create, edit and show dashboards using  ipywidgets
+License: MIT + file LICENSE
+RCloud-Extension: gui
+Encoding: UTF-8
+Imports:
+    rcloud.support, rcloud.web
+RoxygenNote: 6.1.0
