@@ -21,6 +21,11 @@ For each Jupyter Kernel started by RCloud a JavaScript Kernel model is created a
 * Import example notebook into RCloud
 * Run the example
 
+# Screenshots
+
+* docs/Python2-plot-and-ipywidgets.PNG
+* docs/Python3-ipywidgets-multiple-views.PNG
+
 
 # Supported Features
 
